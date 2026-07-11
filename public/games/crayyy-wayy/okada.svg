@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+<g id="okada">
+<g id="wheels">
+<circle cx="180" cy="360" r="70" fill="#222"/><circle cx="180" cy="360" r="38" fill="#bbb"/>
+<circle cx="650" cy="360" r="70" fill="#222"/><circle cx="650" cy="360" r="38" fill="#bbb"/>
+</g>
+<g id="frame" stroke="#222" stroke-width="12" fill="none">
+<path d="M180 360 L310 250 L470 250 L650 360"/>
+<path d="M310 250 L250 360"/>
+<path d="M470 250 L530 190"/>
+<path d="M520 210 L585 210"/>
+</g>
+<g id="body">
+<path d="M300 220 h170 l45 30 h-180 z" fill="#d62828"/>
+<rect x="330" y="190" width="95" height="24" rx="10" fill="#222"/>
+<circle cx="660" cy="215" r="10" fill="#ffd54f"/>
+</g>
+</g></svg>

@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <defs>
+        <style>
+            .keke-body { fill: #FFC107; }
+            .keke-body-highlight { fill: #FFD54F; }
+            .keke-body-shadow { fill: #FFA000; }
+            .keke-trim-dark { fill: #1A232E; }
+            .keke-trim-deep { fill: #111820; }
+            .keke-trim-steel { fill: #37474F; }
+            .keke-steel-light { fill: #B0BEC5; }
+            .keke-steel-dark { fill: #546E7A; }
+        </style>
+    </defs>
+
+    <!-- Master group to flip the entire illustration horizontally -->
+    <g transform="translate(1000, 0) scale(-1, 1)">
+        
+        <!-- FAR BACKGROUND ELEMENTS -->
+        <g id="far-wheels">
+            <circle cx="810" cy="485" r="45" fill="#0A0F12" />
+            <circle cx="810" cy="485" r="32" class="keke-trim-steel" />
+            <circle cx="810" cy="485" r="22" fill="#263238" />
+        </g>
+
+        <!-- CHASSIS AND INTERIOR BACKDROP -->
+        <g id="chassis">
+            <rect x="330" y="460" width="550" height="15" rx="6" class="keke-trim-dark" />
+            <rect x="680" y="450" width="80" height="30" rx="5" fill="#263238" />
+            <rect x="700" y="475" width="40" height="10" rx="4" class="keke-trim-deep" />
+            <path d="M 820 460 L 850 480 L 870 460" stroke="#263238" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <rect x="730" y="400" width="12" height="60" rx="4" class="keke-trim-dark" />
+            <line x1="725" y1="410" x2="747" y2="415" stroke="#FFC107" stroke-width="4" />
+            <line x1="725" y1="425" x2="747" y2="430" stroke="#FFC107" stroke-width="4" />
+            <line x1="725" y1="440" x2="747" y2="445" stroke="#FFC107" stroke-width="4" />
+        </g>
+
+        <g id="interior">
+            <path d="M 330 240 L 890 240 L 890 460 L 330 460 Z" class="keke-trim-dark" />
+            <path d="M 470 240 L 890 240 L 890 460 L 470 460 Z" class="keke-trim-deep" />
+        </g>
+
+        <g id="interior-details">
+            <rect x="510" y="410" width="340" height="50" rx="8" fill="#263238" />
+            <rect x="510" y="410" width="340" height="15" rx="4" class="keke-trim-steel" />
+            <rect x="800" y="270" width="70" height="150" rx="15" fill="#263238" />
+            <rect x="790" y="270" width="15" height="150" rx="7" class="keke-trim-steel" />
+            
+            <rect x="410" y="420" width="60" height="40" rx="8" fill="#263238" />
+            <rect x="410" y="420" width="60" height="12" rx="4" class="keke-trim-steel" />
+            <rect x="460" y="310" width="25" height="130" rx="10" fill="#263238" />
+            <rect x="455" y="310" width="10" height="130" rx="5" class="keke-trim-steel" />
+            
+            <rect x="330" y="280" width="12" height="140" transform="rotate(-18 330 280)" class="keke-trim-deep" />
+            <rect x="310" y="250" width="45" height="35" rx="6" class="keke-trim-dark" />
+            <rect x="290" y="280" width="60" height="12" rx="6" class="keke-trim-steel" />
+            <rect x="280" y="278" width="25" height="16" rx="4" class="keke-trim-deep" />
+        </g>
+
+        <!-- YELLOW BODY PANELS -->
+        <g id="body">
+            <path d="M 170 380 L 320 230 L 350 230 L 320 470 L 230 470 Q 180 470 160 410 Q 155 385 170 380 Z" class="keke-body" />
+            <path d="M 170 380 L 320 230 L 335 230 L 185 380 Z" class="keke-body-highlight" />
+            
+            <rect x="310" y="430" width="580" height="40" rx="8" class="keke-body" />
+            <rect x="310" y="430" width="580" height="8" rx="4" class="keke-body-highlight" />
+            <rect x="310" y="460" width="580" height="10" rx="4" class="keke-body-shadow" />
+            
+            <path d="M 520 290 L 860 290 Q 885 290 885 320 L 885 470 L 520 470 Z" class="keke-body" />
+            <path d="M 520 290 L 860 290 Q 875 290 875 300 L 520 300 Z" class="keke-body-highlight" />
+            <path d="M 875 320 L 885 320 L 885 470 L 875 470 Z" class="keke-body-shadow" />
+            
+            <rect x="470" y="240" width="45" height="230" rx="6" class="keke-body" />
+            <rect x="470" y="240" width="10" height="230" rx="4" class="keke-body-highlight" />
+            
+            <polygon points="820,290 885,290 865,150 810,150" class="keke-body" />
+            <polygon points="820,290 832,290 822,150 810,150" class="keke-body-highlight" />
+            
+            <polygon points="315,230 345,230 405,140 375,140" class="keke-body" />
+            <polygon points="345,230 355,230 415,140 405,140" class="keke-body-shadow" />
+
+            <!-- Nigerian Green/White Identity Stripe -->
+            <rect x="330" y="445" width="540" height="4" fill="#008751" />
+            <rect x="330" y="449" width="540" height="4" fill="#FFFFFF" />
+            <rect x="330" y="453" width="540" height="4" fill="#008751" />
+        </g>
+
+        <!-- WHEEL ARCHES -->
+        <g id="wheel-arches">
+            <path d="M 160 470 A 70 70 0 0 1 300 470 Z" class="keke-trim-deep" />
+            <path d="M 170 470 A 60 60 0 0 1 290 470 Z" class="keke-trim-dark" />
+            
+            <path d="M 680 470 A 70 70 0 0 1 820 470 Z" class="keke-trim-deep" />
+            <path d="M 690 470 A 60 60 0 0 1 810 470 Z" class="keke-trim-dark" />
+        </g>
+
+        <!-- FRONT SUSPENSION & MUDGUARD -->
+        <g id="suspension">
+            <path d="M 165 490 A 65 65 0 0 1 295 490 L 280 490 A 50 50 0 0 0 180 490 Z" class="keke-body" />
+            <path d="M 165 490 A 65 65 0 0 1 230 425 L 230 440 A 50 50 0 0 0 180 490 Z" class="keke-body-highlight" />
+            
+            <rect x="220" y="380" width="16" height="120" transform="rotate(-15 230 500)" class="keke-trim-steel" />
+            <rect x="220" y="460" width="16" height="40" transform="rotate(-15 230 500)" class="keke-trim-deep" />
+        </g>
+
+        <!-- WHEELS -->
+        <g id="wheels">
+            <!-- Rear Near Wheel -->
+            <circle cx="750" cy="500" r="45" class="keke-trim-deep" />
+            <circle cx="750" cy="500" r="38" class="keke-trim-dark" />
+            <circle cx="750" cy="500" r="32" class="keke-steel-light" />
+            <circle cx="750" cy="500" r="28" fill="#90A4AE" />
+            <circle cx="750" cy="500" r="14" class="keke-steel-dark" />
+            <circle cx="750" cy="500" r="6" fill="#263238" />
+            <circle cx="750" cy="480" r="4" class="keke-trim-steel" />
+            <circle cx="769" cy="493" r="4" class="keke-trim-steel" />
+            <circle cx="762" cy="515" r="4" class="keke-trim-steel" />
+            <circle cx="738" cy="515" r="4" class="keke-trim-steel" />
+            <circle cx="731" cy="493" r="4" class="keke-trim-steel" />
+
+            <!-- Front Wheel -->
+            <circle cx="230" cy="500" r="45" class="keke-trim-deep" />
+            <circle cx="230" cy="500" r="38" class="keke-trim-dark" />
+            <circle cx="230" cy="500" r="32" class="keke-steel-light" />
+            <circle cx="230" cy="500" r="28" fill="#90A4AE" />
+            <circle cx="230" cy="500" r="14" class="keke-steel-dark" />
+            <circle cx="230" cy="500" r="6" fill="#263238" />
+            <circle cx="230" cy="480" r="4" class="keke-trim-steel" />
+            <circle cx="249" cy="493" r="4" class="keke-trim-steel" />
+            <circle cx="242" cy="515" r="4" class="keke-trim-steel" />
+            <circle cx="218" cy="515" r="4" class="keke-trim-steel" />
+            <circle cx="211" cy="493" r="4" class="keke-trim-steel" />
+        </g>
+
+        <!-- WINDOWS / GLASS -->
+        <g id="windows">
+            <polygon points="345,225 405,145 425,145 365,225" fill="#81D4FA" />
+            <polygon points="355,200 380,165 390,165 365,200" fill="#E1F5FE" />
+            <rect x="520" y="295" width="330" height="8" rx="4" class="keke-steel-dark" />
+            <rect x="520" y="295" width="330" height="3" rx="1" fill="#90A4AE" />
+        </g>
+
+        <!-- ROOF / CANOPY -->
+        <g id="roof">
+            <path d="M 350 145 Q 630 110 890 155 Q 910 160 895 180 L 885 190 L 365 165 Q 350 165 340 155 Z" class="keke-trim-deep" />
+            <path d="M 345 152 Q 630 120 885 165 L 882 173 Q 630 130 355 162 Z" class="keke-trim-steel" />
+            <path d="M 450 135 L 445 166" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 550 128 L 545 168" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 650 126 L 645 170" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 750 130 L 745 173" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+        </g>
+
+        <!-- BUMPERS & EXTERIOR DETAILS -->
+        <g id="details">
+            <path d="M 160 420 L 150 435 L 155 465 L 170 470 Z" class="keke-trim-dark" />
+            <path d="M 155 425 L 150 435 L 155 465 L 160 465 Z" class="keke-trim-steel" />
+            
+            <rect x="880" y="445" width="25" height="15" rx="5" class="keke-trim-dark" />
+            <rect x="895" y="445" width="10" height="15" rx="3" class="keke-trim-steel" />
+
+            <rect x="860" y="470" width="12" height="50" rx="3" class="keke-trim-deep" />
+            <rect x="860" y="505" width="12" height="6" class="keke-body" />
+            <rect x="290" y="470" width="10" height="40" rx="3" class="keke-trim-deep" />
+
+            <rect x="315" y="450" width="570" height="8" rx="4" class="keke-trim-deep" />
+        </g>
+
+        <!-- LIGHTS -->
+        <g id="lights">
+            <circle cx="165" cy="390" r="22" class="keke-trim-deep" />
+            <circle cx="162" cy="390" r="16" fill="#FFEB3B" />
+            <circle cx="158" cy="386" r="6" fill="#FFF9C4" />
+            
+            <rect x="230" y="380" width="18" height="10" rx="4" fill="#FF9800" />
+            <rect x="230" y="380" width="10" height="4" rx="2" fill="#FFE0B2" />
+            
+            <rect x="880" y="360" width="12" height="35" rx="4" fill="#F44336" />
+            <rect x="880" y="362" width="6" height="10" rx="2" fill="#FFCDD2" />
+            <rect x="880" y="405" width="12" height="15" rx="4" fill="#FF9800" />
+        </g>
+
+        <!-- MIRRORS -->
+        <g id="mirrors">
+            <path d="M 345 230 L 280 180" stroke="#111820" stroke-width="6" stroke-linecap="round" />
+            <rect x="255" y="160" width="30" height="45" rx="8" class="keke-trim-dark" />
+            <rect x="260" y="162" width="20" height="10" rx="5" class="keke-trim-steel" />
+            <rect x="258" y="165" width="10" height="35" rx="4" class="keke-trim-deep" />
+        </g>
+    </g>
+</svg>

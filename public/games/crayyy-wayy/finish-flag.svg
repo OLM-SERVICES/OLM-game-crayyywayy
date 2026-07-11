@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 300">
+  <defs>
+    <linearGradient id="pole-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#8a6d1f"/>
+    </linearGradient>
+    <linearGradient id="flag-glow-edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ff8f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff3fb0" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="neon-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- pole -->
+  <rect x="15" y="0" width="7" height="300" fill="url(#pole-grad)"/>
+  <rect x="15" y="0" width="2" height="300" fill="#fff6d6" opacity="0.6"/>
+
+  <!-- neon glow behind checker -->
+  <rect x="-2" y="-3" width="46" height="66" fill="url(#flag-glow-edge)" opacity="0.35" filter="url(#neon-blur)"/>
+
+  <!-- checkered flag -->
+  <g>
+    <rect x="0" y="0" width="10" height="10" fill="#0b0b0b"/>
+    <rect x="10" y="0" width="10" height="10" fill="#ffffff"/>
+    <rect x="0" y="10" width="10" height="10" fill="#ffffff"/>
+    <rect x="10" y="10" width="10" height="10" fill="#0b0b0b"/>
+    <rect x="0" y="20" width="10" height="10" fill="#0b0b0b"/>
+    <rect x="10" y="20" width="10" height="10" fill="#ffffff"/>
+    <rect x="0" y="30" width="10" height="10" fill="#ffffff"/>
+    <rect x="10" y="30" width="10" height="10" fill="#0b0b0b"/>
+    <rect x="0" y="40" width="10" height="10" fill="#0b0b0b"/>
+    <rect x="10" y="40" width="10" height="10" fill="#ffffff"/>
+    <rect x="0" y="50" width="10" height="10" fill="#ffffff"/>
+    <rect x="10" y="50" width="10" height="10" fill="#0b0b0b"/>
+  </g>
+
+  <!-- neon outline around the flag -->
+  <rect x="0" y="0" width="20" height="60" fill="none" stroke="url(#flag-glow-edge)" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- small pink/green pennant tips top & bottom, matching logo palette -->
+  <circle cx="18.5" cy="4" r="3" fill="#39ff8f" opacity="0.9" filter="url(#neon-blur)"/>
+  <circle cx="18.5" cy="4" r="1.5" fill="#eafff2"/>
+  <circle cx="18.5" cy="56" r="3" fill="#ff3fb0" opacity="0.9" filter="url(#neon-blur)"/>
+  <circle cx="18.5" cy="56" r="1.5" fill="#ffe3f3"/>
+
+  <!-- base plate -->
+  <ellipse cx="18.5" cy="298" rx="10" ry="3" fill="#1a1224" opacity="0.6"/>
+</svg>
