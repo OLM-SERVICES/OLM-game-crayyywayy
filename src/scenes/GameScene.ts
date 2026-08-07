@@ -1551,11 +1551,16 @@ export class GameScene extends Phaser.Scene {
     // letting them keep racing along under the win/lose card.
     this.roadScrollSpeed = 0
 
-    this.sendToParent('BET_DONE', { newBalance: payload.newBalance })
-
     this.sound.play(win ? 'sfx-win' : 'sfx-loss', { volume: 0.8 })
 
     this.buildResultCard(payload, win)
+
+    // Only tell the parent (and therefore update the visible balance) once
+    // the result has actually been shown — sound played, card built. This
+    // used to fire as the very first line of showResult(), before either of
+    // those, which let the parent's balance display reveal the outcome
+    // before the player had seen or heard anything on screen.
+    this.sendToParent('BET_DONE', { newBalance: payload.newBalance })
 
     if (win) {
       this.cameras.main.flash(280, 255, 215, 60, false)
