@@ -170,6 +170,13 @@ export class GameScene extends Phaser.Scene {
 
   private bgMusic?: Phaser.Sound.BaseSound
   private raceSound?: Phaser.Sound.BaseSound
+  // Same convention as every other game's bridge — defaults to '*' so local
+  // dev (no VITE_PARENT_ORIGIN set) keeps working, but the message listener
+  // below only actually enforces the check once a real origin is
+  // configured. This listener previously accepted a message from ANY
+  // origin at all — any other tab/frame the player had open could post a
+  // fake BET_RESULT into this game.
+  private PARENT_ORIGIN: string = import.meta.env.VITE_PARENT_ORIGIN || '*'
   private messageListener?: (event: MessageEvent) => void
   private betRequestTimeout?: Phaser.Time.TimerEvent
   private resizeDebounceTimer?: number
@@ -1121,6 +1128,7 @@ export class GameScene extends Phaser.Scene {
   // ── Parent <-> iframe messaging ──────────────────────────────────────
   private setupMessaging() {
     this.messageListener = (event: MessageEvent) => {
+      if (this.PARENT_ORIGIN !== '*' && event.origin !== this.PARENT_ORIGIN) return
       const { type, payload } = event.data || {}
       // 'PLACE_BET' is the existing host ack (carries the real stake); 'STAKE_UPDATE' is
       // accepted too in case the host wants to push stake changes at any time.
@@ -1132,7 +1140,7 @@ export class GameScene extends Phaser.Scene {
   }
 
   private sendToParent(type: string, payload: unknown) {
-    window.parent?.postMessage({ type, payload }, '*')
+    window.parent?.postMessage({ type, payload }, this.PARENT_ORIGIN)
   }
 
   private generateClientSeed(): string {
